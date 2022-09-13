@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to Netflix - Watch your favourite movies and series</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="C:\xampp\htdocs\New folder\fontawesome-free-5.14.0-web\css\all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="signin.html">My List</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Latest TV Shows & Movies">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+        <div class="banner">
+            <img src="img/bg.jpg" class="bg">
+            <div class="content">
+                <img src="img/name.png" class="movieTitle">
+                <h4>
+                    <span>2020</span>
+                    <span><i>12+</i></span>
+                    <span>1h 55m</span>
+                    <span>Action</span>
+                </h4>
+                <p>
+                    Lorem diam est consetetur tempor sed sit duo, accusam aliquyam et sadipscing ea elitr erat, at nonumy aliquyam nonumy sanctus kasd est diam, ipsum et invidunt diam erat lorem, diam lorem accusam et nonumy et. Elitr kasd gubergren diam lorem.
+                </p>
+                <div class="buttons">
+                    <a href="#" onclick="watchMovie();"><i class="fas fa-play"></i>Play</a>
+                    <a href="#"><i class="fas fa-plus"></i>My List</a>
+                </div>
+            </div>
+            <a href="#" class="play" onclick="watchTrailer();"><img src="img/play.png">Watch Trailer</a>
+        </div>
+        <div class="trailer" id="trailer">
+            <video src="D:/music/[MV] IU(아이유) _ BBIBBI(삐삐).mp4" controls="true" autoplay="true"></video>
+            <img src="img/close.png" onclick="closeTrailer();">
+        </div>
+        <div class="movie" id="movie">
+            <video src="D:/movie and series/Frozen.2.2019.720p.DVDScr.Farsi.Subbed.mkv" controls="true" autoplay="true"></video>
+            <img src="img/close.png" onclick="closeMovie();">
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
